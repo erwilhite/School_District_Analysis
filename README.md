@@ -13,8 +13,10 @@ The original results:
 Adjusted results:
 ![district_sum_adj](https://user-images.githubusercontent.com/104689576/186789343-30a7bbc7-4e59-4fbb-8eae-feb7416d1aa1.png)
 
-*	The school summary 
+*	The percentage in the school summary was initally affected after recplacing the 9th grader values with null values, as the code to create the percentages calculated all values greater than 70 divided by the count of student names by school. This lowered it to 65% from the 91% it was originally, as the 9th graders were included in the total count even though they did not have scores. 
+
 *	How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+
 *	How does replacing the ninth-grade scores affect the following:
     *	Math and reading scores by grade
     *	Scores by school spending
