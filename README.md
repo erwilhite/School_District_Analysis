@@ -13,15 +13,16 @@ The original results:
 Adjusted results:
 ![district_sum_adj](https://user-images.githubusercontent.com/104689576/186789343-30a7bbc7-4e59-4fbb-8eae-feb7416d1aa1.png)
 
-*	The percentage in the school summary was initally affected after recplacing the 9th grader values with null values, as the code to create the percentages calculated all values greater than 70 divided by the count of student names by school. This lowered it to 65% from the 91% it was originally, as the 9th graders were included in the total count even though they did not have scores. 
+*	The percentage in the school summary was initally affected after recplacing the 9th grader values with null values, as the code to create the percentages calculated all values greater than 70 divided by the count of student names by school. This lowered it to 65% from the 91% it was originally, as the 9th graders were included in the total count even though they did not have scores. When the school summary used the 10-12th grade students values to replace the 9th grade students, the results were similar to before. 
 
-*	How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
+*	Replacing the 9th graders values with null values caused the school to go from 2nd of 15 schools in overall passing percentage to 8th. After using the 10-12th grade scores, the school remained in the 2nd spot.
 
-*	How does replacing the ninth-grade scores affect the following:
-    *	Math and reading scores by grade
-    *	Scores by school spending
-    *	Scores by school size
-    *	Scores by school type
+*	Replacing the the ninth-grade scores had the effects on the following comparisions:
+    *	Math and reading scores by grade: Replacing the scores made little impact on the scores by grade, however it is hard to compare the new grades as the 9th graders       scores show nan. 
+    *	Scores by school spending: Similarly, changing the scores did not have much impact on spending. 
+    *	Scores by school size: There was little change noted in this section when the 9th grade scores were replaced. 
+    *	Scores by school type: Replacing the 9th grade score also had little impact on this metric. It is noted though, that charter schools have much higher percentages       of passing students. 
     
 ## Summary
-Summarize four changes in the updated school district analysis after reading and math scores for the ninth grade at Thomas High School have been replaced with NaNs.
+
+In conclusion, removing the 9th grade student scores had no discernible difference on the district summary analysis. It did however, cause the school to go from being 2nd in the district to 8th for overal passing percentages since there were no scores for the students. Nearly all other metrics showed little change with replacing the scores, inclduing school spending and school type. 
